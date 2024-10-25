@@ -35,7 +35,7 @@ namespace project_1
             hp = 100;
             cns = 10;
             pwr = 25;
-            health.Text = "Health: " + hp.ToString();
+            health.Text = hp.ToString();
             coins.Text = "Coins: " + cns.ToString();
             power.Text = "Power: " + pwr.ToString();
         }
@@ -47,7 +47,7 @@ namespace project_1
             pwr -= 7;
 
 
-            health.Text = "Health: " + hp.ToString();
+            health.Text = hp.ToString();
             coins.Text = "Coins: " + cns.ToString();
             power.Text = "Power: " + pwr.ToString();
 
