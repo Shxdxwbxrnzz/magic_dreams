@@ -20,14 +20,17 @@ namespace project_1
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void playbutton_Click(object sender, EventArgs e)
         {
             coins.Visible = true;
             health.Visible = true;
             power.Visible = true;
-            button1.Visible = false;
+            playbutton.Visible = false;
             button2.Visible = true;
             button3.Visible = true;
+            CNP.Visible = true;
+            PWP.Visible = true;
+            HPP.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,9 +38,7 @@ namespace project_1
             hp = 100;
             cns = 10;
             pwr = 25;
-            health.Text = hp.ToString();
-            coins.Text = "Coins: " + cns.ToString();
-            power.Text = "Power: " + pwr.ToString();
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -47,15 +48,19 @@ namespace project_1
             pwr -= 7;
 
 
-            health.Text = hp.ToString();
-            coins.Text = "Coins: " + cns.ToString();
-            power.Text = "Power: " + pwr.ToString();
+            UpdateStats();
+        }
 
-
+        private void UpdateStats()
+        {
             if (hp <= 0)
             {
-                health.Text = "Health: 0 (Game Over)";
+                hp = 0;
             }
+
+            health.Text = hp.ToString();
+            coins.Text = cns.ToString();
+            power.Text = pwr.ToString();
         }
 
 
@@ -69,13 +74,21 @@ namespace project_1
         {
             button2.Visible = false;
             button3.Visible = false;
-            button4.Visible = true;
-            button5.Visible = true;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void exitbutton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void playbutton_MouseEnter(object sender, EventArgs e)
+        {
+            playbutton.Cursor = Cursors.Hand;
+        }
+
+        private void playbutton_MouseLeave(object sender, EventArgs e)
+        {
+            playbutton.Cursor = Cursors.Default;
         }
     }
 }
