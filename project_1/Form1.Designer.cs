@@ -30,7 +30,6 @@ namespace project_1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
             this.health = new System.Windows.Forms.Label();
             this.coins = new System.Windows.Forms.Label();
             this.power = new System.Windows.Forms.Label();
@@ -41,26 +40,24 @@ namespace project_1
             this.CNP = new System.Windows.Forms.PictureBox();
             this.PWP = new System.Windows.Forms.PictureBox();
             this.playbutton = new System.Windows.Forms.PictureBox();
+            this.heading = new System.Windows.Forms.PictureBox();
+            this.visual = new System.Windows.Forms.PictureBox();
+            this.textbg = new System.Windows.Forms.PictureBox();
+            this.text = new System.Windows.Forms.Label();
+            this.choosebgr = new System.Windows.Forms.PictureBox();
+            this.choosebgl = new System.Windows.Forms.PictureBox();
+            this.choosebgcntr = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.HPP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CNP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PWP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playbutton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heading)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visual)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textbg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgcntr)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(482, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MAGIC DREAMS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // health
             // 
@@ -105,9 +102,9 @@ namespace project_1
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(33, 519);
+            this.button2.Location = new System.Drawing.Point(45, 518);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(482, 189);
+            this.button2.Size = new System.Drawing.Size(540, 180);
             this.button2.TabIndex = 6;
             this.button2.Text = "Fight";
             this.button2.UseVisualStyleBackColor = true;
@@ -117,9 +114,9 @@ namespace project_1
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(766, 519);
+            this.button3.Location = new System.Drawing.Point(702, 518);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(482, 189);
+            this.button3.Size = new System.Drawing.Size(540, 180);
             this.button3.TabIndex = 7;
             this.button3.Text = "Run";
             this.button3.UseVisualStyleBackColor = true;
@@ -188,12 +185,96 @@ namespace project_1
             this.playbutton.Click += new System.EventHandler(this.playbutton_Click);
             this.playbutton.MouseEnter += new System.EventHandler(this.playbutton_MouseEnter);
             // 
+            // heading
+            // 
+            this.heading.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.heading.BackColor = System.Drawing.Color.White;
+            this.heading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.heading.Location = new System.Drawing.Point(526, 10);
+            this.heading.Name = "heading";
+            this.heading.Size = new System.Drawing.Size(239, 37);
+            this.heading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heading.TabIndex = 15;
+            this.heading.TabStop = false;
+            // 
+            // visual
+            // 
+            this.visual.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.visual.Image = ((System.Drawing.Image)(resources.GetObject("visual.Image")));
+            this.visual.Location = new System.Drawing.Point(346, 55);
+            this.visual.Name = "visual";
+            this.visual.Size = new System.Drawing.Size(593, 321);
+            this.visual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.visual.TabIndex = 16;
+            this.visual.TabStop = false;
+            // 
+            // textbg
+            // 
+            this.textbg.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textbg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textbg.Location = new System.Drawing.Point(346, 382);
+            this.textbg.Name = "textbg";
+            this.textbg.Size = new System.Drawing.Size(593, 145);
+            this.textbg.TabIndex = 17;
+            this.textbg.TabStop = false;
+            // 
+            // text
+            // 
+            this.text.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.text.AutoSize = true;
+            this.text.BackColor = System.Drawing.Color.Black;
+            this.text.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.text.ForeColor = System.Drawing.SystemColors.Control;
+            this.text.Location = new System.Drawing.Point(441, 431);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(430, 28);
+            this.text.TabIndex = 18;
+            this.text.Text = "Тут буде текст який описує ігрову подію";
+            // 
+            // choosebgr
+            // 
+            this.choosebgr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.choosebgr.Location = new System.Drawing.Point(1020, 382);
+            this.choosebgr.Name = "choosebgr";
+            this.choosebgr.Size = new System.Drawing.Size(100, 50);
+            this.choosebgr.TabIndex = 19;
+            this.choosebgr.TabStop = false;
+            // 
+            // choosebgl
+            // 
+            this.choosebgl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.choosebgl.BackColor = System.Drawing.Color.Transparent;
+            this.choosebgl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.choosebgl.Image = ((System.Drawing.Image)(resources.GetObject("choosebgl.Image")));
+            this.choosebgl.Location = new System.Drawing.Point(45, 459);
+            this.choosebgl.Name = "choosebgl";
+            this.choosebgl.Size = new System.Drawing.Size(141, 122);
+            this.choosebgl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.choosebgl.TabIndex = 20;
+            this.choosebgl.TabStop = false;
+            // 
+            // choosebgcntr
+            // 
+            this.choosebgcntr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.choosebgcntr.Location = new System.Drawing.Point(1020, 442);
+            this.choosebgcntr.Name = "choosebgcntr";
+            this.choosebgcntr.Size = new System.Drawing.Size(100, 50);
+            this.choosebgcntr.TabIndex = 21;
+            this.choosebgcntr.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.choosebgcntr);
+            this.Controls.Add(this.choosebgl);
+            this.Controls.Add(this.choosebgr);
+            this.Controls.Add(this.text);
+            this.Controls.Add(this.textbg);
+            this.Controls.Add(this.visual);
+            this.Controls.Add(this.heading);
             this.Controls.Add(this.playbutton);
             this.Controls.Add(this.PWP);
             this.Controls.Add(this.CNP);
@@ -204,7 +285,6 @@ namespace project_1
             this.Controls.Add(this.power);
             this.Controls.Add(this.coins);
             this.Controls.Add(this.health);
-            this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -216,14 +296,18 @@ namespace project_1
             ((System.ComponentModel.ISupportInitialize)(this.CNP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PWP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playbutton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heading)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visual)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textbg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.choosebgcntr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label health;
         private System.Windows.Forms.Label coins;
         private System.Windows.Forms.Label power;
@@ -234,6 +318,13 @@ namespace project_1
         private System.Windows.Forms.PictureBox CNP;
         private System.Windows.Forms.PictureBox PWP;
         private System.Windows.Forms.PictureBox playbutton;
+        private System.Windows.Forms.PictureBox heading;
+        private System.Windows.Forms.PictureBox visual;
+        private System.Windows.Forms.PictureBox textbg;
+        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.PictureBox choosebgr;
+        private System.Windows.Forms.PictureBox choosebgl;
+        private System.Windows.Forms.PictureBox choosebgcntr;
     }
 }
 
